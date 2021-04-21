@@ -18,7 +18,7 @@ int check_arg(char **arg)
 
 char **get_arg(char *str)
 {
-    char **arg = split(str, "|;><");
+    char **arg = split(str, " \t");
     int size;
     int size_str;
 

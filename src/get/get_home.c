@@ -17,7 +17,7 @@ char *get_home(control_t *control)
         tmp = tmp->next;
     }
     control = my_set_env(control, get_arr_arg("HOME",
-    my_strcat("/home", get_user(control))));
+    my_strcat("/home/", get_user(control))));
     if (!control)
         return (NULL);
     return (get_home(control));
